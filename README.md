@@ -15,3 +15,17 @@ cd SAPS-API
 ## Without git
 1. Download it as zip file
 2. Extract it and place it in the same folder as your project file
+
+# Usage example
+```py
+import SAPS
+
+SAPS.open_exam_results(
+  identification_card = '001234567890',
+  school_code = 'ABC1234',
+  tingkatan = '5',
+  kelas = 'AMETIS_DLP',
+  tahun = '2023',
+  exam_type = 1, # PEPERIKSAAN PERTENGAHAN TAHUN, 2 > PEPERIKSAAN AKHIR TAHUN
+  filename = 'exam_results.html',
+)
