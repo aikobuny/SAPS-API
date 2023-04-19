@@ -29,3 +29,4 @@ SAPS.open_exam_results(
   exam_type = 1, # PEPERIKSAAN PERTENGAHAN TAHUN, 2 > PEPERIKSAAN AKHIR TAHUN
   filename = 'exam_results.html',
 )
+```
