@@ -84,7 +84,7 @@ def is_exam_results_exists(identification_card: str, school_code: str, tingkatan
     return not "Maklumat markah pelajar masih belum lagi dikemaskini." in a.text
 
 
-def open_exam_results(identification_card: str, school_code: str, tingkatan: str, kelas: str, tahun: str, exam_type: int = 2, filename: str = 'exam_results.html'):
+def save_exam_results(identification_card: str, school_code: str, tingkatan: str, kelas: str, tahun: str, exam_type: int = 2, filename: str = 'exam_results.html'):
     '''
         identification_card
             Your identification card in string. E.g. '012345678900'
@@ -123,4 +123,4 @@ def open_exam_results(identification_card: str, school_code: str, tingkatan: str
     if "Maklumat markah pelajar masih belum lagi dikemaskini." in a.text:
         raise ExamResultsDoesNotExist
     open(filename, 'wb').write(a.content)
-    os.system(f'explorer "{filename}"')
+    print(f'Saved {filename}')
