@@ -1,6 +1,0 @@
-API = 'https://sapsnkra.moe.gov.my/ajax/papar_carian.php?'
-API_2 = 'https://sapsnkra.moe.gov.my/ajax/maklumat_pelajar.php?'
-API_3 = 'https://sapsnkra.moe.gov.my/ajax/papar_btn.php?'
-API_4 = 'https://sapsnkra.moe.gov.my/ibubapa2/slipma.php?'
-exist = 'Wujud'
-not_exist = 'Tidak Wujud'
