@@ -1,9 +1,10 @@
 import requests
+import urllib3
 import os
 from . import api
 from .exceptions import *
 from requests.utils import requote_uri
-requests.packages.urllib3.disable_warnings()  # Suppress HTTP warnings
+urllib3.disable_warnings()  # Suppress HTTP warnings
 
 
 def is_identification_card_exists(identification_card: str) -> bool:
