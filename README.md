@@ -20,7 +20,7 @@ cd SAPS-API
 ```py
 import SAPS
 
-SAPS.open_exam_results(
+SAPS.save_exam_results(
   identification_card = '001234567890',
   school_code = 'ABC1234',
   tingkatan = '5',
